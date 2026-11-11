@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Unsend</title>
+  <link rel="stylesheet" href="popup.css">
+  <script src="popup.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>Instagram Unsend</h1>
+
+    <label class="delay-label" for="delay">Delay between unsends</label>
+    <select id="delay">
+      <option value="1000">1 second</option>
+      <option value="2000">2 seconds</option>
+      <option value="3000">3 seconds</option>
+      <option value="4000">4 seconds</option>
+      <option value="5000" selected>5 seconds</option>
+      <option value="6000">6 seconds</option>
+      <option value="7000">7 seconds</option>
+    </select>
+
+    <button id="toggle">Unsend all</button>
+    <p id="status">Open an Instagram DM to begin.</p>
+    <p class="note">Only messages with a verified Unsend action are processed.</p>
+  </main>
+</body>
+</html>

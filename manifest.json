@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Instagram Unsend",
+  "version": "0.2.0",
+  "description": "Unsend your messages in an Instagram conversation.",
+  "permissions": ["activeTab"],
+  "host_permissions": ["https://www.instagram.com/*"],
+  "action": {"default_title": "Instagram Unsend", "default_popup": "popup.html"},
+  "content_scripts": [{
+    "matches": ["https://www.instagram.com/*"],
+    "js": ["content.js"],
+    "run_at": "document_idle"
+  }],
+  "browser_specific_settings": {
+    "gecko": {"id": "@istg_unsend_public", "strict_min_version": "128.0", "data_collection_permissions": {
+      "required": ["none"]
+    }}
+  }
+}
